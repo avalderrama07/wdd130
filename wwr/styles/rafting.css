@@ -85,3 +85,8 @@ h1 {
     margin-left: 16px;
     border-radius: 5px;
 }
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+}
