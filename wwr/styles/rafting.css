@@ -39,6 +39,10 @@ article {
     padding: 8px;
 }
 
+nav a {
+    color: var(--accent2-color);
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -70,7 +74,7 @@ h1 {
     left: 20px;
     right: 20px;
     padding: 16px;
-    background-color: rgba(233, 216, 166, 0.85);
+    background-color: var(--secondary-color);
     border-radius: 5px;
 }
 
