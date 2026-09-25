@@ -14,21 +14,24 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: var(--text-light);
     display: block;
     padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 h1 {
     color: var(--primary-color);
     padding: .5rem;
-}
-
-main {
-    max-width: 840px;
+    border-bottom: 1px solid var(--primary-color)
 }
 
 aside {
@@ -55,7 +58,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
 }
 
 p {
@@ -76,8 +79,33 @@ footer {
     padding: 1rem;
     background-color: var(--accent1-color);
     color: var(--heading-color);
+    clear: both;
 }
 
 .indent {
     padding-left: 2rem;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
