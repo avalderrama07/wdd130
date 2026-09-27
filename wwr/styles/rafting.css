@@ -114,15 +114,26 @@ header {
 
 .history {
     margin: 2rem 0;
-    text-align: center;
 }
 
 .history h2 {
+    text-align: center;
     margin-bottom: 1rem;
 }
 
 .history-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* Columna texto - imagen - texto */
+    gap: 1.5rem;
+    align-items: center;
     padding: 1rem;
+}
+
+.history-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .adventure {
