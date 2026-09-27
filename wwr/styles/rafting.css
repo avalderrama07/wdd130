@@ -78,6 +78,7 @@ h1 {
     right: 20px;
     padding: 16px;
     background-color: var(--secondary-color);
+    color: #ffff;
     border-radius: 5px;
 }
 
@@ -87,11 +88,6 @@ h1 {
     height: auto;
     margin-left: 16px;
     border-radius: 5px;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
 }
 
 header {
@@ -125,7 +121,7 @@ header {
 }
 
 .history-container {
-    padding: 1 rem;
+    padding: 1rem;
 }
 
 .adventure {
