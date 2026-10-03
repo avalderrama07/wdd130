@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #005f73;
+    --primary-color: #364575;
     --secondary-color: #07595b;
     ;
     --accent1-color: #2b2d42;
@@ -32,6 +32,12 @@ h2 {
     color: var(--primary-color);
 }
 
+main > h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
 nav,
 p,
 section,
@@ -61,7 +67,7 @@ nav a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -70,6 +76,12 @@ h1 {
     opacity: 0.8;
     background-color: var(--accent1-color);
     color: #ffffff;
+}
+
+main h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
 }
 
 .hero article {
@@ -194,4 +206,126 @@ footer p {
 .socialmedia img {
     width: 30px;
     height: auto;
+}
+
+.info address {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form {
+    display: grid;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: var(--accent1-color);
+    padding: 1.5rem;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.form label,
+.radio-group legend {
+    color: #ffffff;
+}
+
+.radio-group {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.8rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-item input[type="text"],
+.form-item input[type="text"],
+.form-item textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.radio-group {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-radius: 4px;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+
+.form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--primary-color) 0.3s;
+}
+
+.employees {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.employee-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
 }
