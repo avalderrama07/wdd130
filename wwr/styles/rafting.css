@@ -245,8 +245,7 @@ footer p {
     color: #ccc;
 }
 
-.form label,
-.radio-group legend {
+.form label {
     color: #ffffff;
 }
 
@@ -281,17 +280,11 @@ footer p {
     font-family: inherit;
 }
 
-.radio-group {
-    border: 1px solid #ccc;
-    padding: 0.8rem;
-    border-radius: 4px;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
 .radio-group legend {
     font-weight: bold;
     padding: 0 0.4rem;
+    color: #ccc;
+
 }
 
 .form button[type="submit"] {
